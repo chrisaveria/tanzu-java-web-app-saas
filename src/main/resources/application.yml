@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: tanzu-java-web-app
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
+  metrics:
+    export:
+      wavefront:
+        apiToken: 1111-23this-45is-678a-faketoken # this is a fake token since wavefront lib expects a token, though this is not used for authentication to collector for ingestion    
+wavefront:
+    application:
+        name: my-application
+        service-name: my-service
+    api-token: 1111-23this-45is-678a-faketoken # this is a fake token since wavefront lib expects a token, though this is not used for authentication to collector for ingestion    
+    uri: http://aria-telegraf-collector.aria-k8s.svc.cluster.local:2878/
+
+
