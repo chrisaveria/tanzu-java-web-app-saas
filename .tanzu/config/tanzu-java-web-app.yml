@@ -4,12 +4,18 @@ metadata:
   creationTimestamp: null
   name: tanzu-java-web-app
 spec:
+  acceptedServiceBindings:
+  - name: mysql
+    types:
+    - my-db
   build:
     buildpacks: {}
     path: ../..
   nonSecretEnv:
   - name: key1
     value: test
+  - name: KEY
+    value: VALUE
   ports:
   - name: main
     port: 8080

@@ -19,6 +19,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<snakeyaml.version>1.32</snakeyaml.version>	
+		<!-- CAA - Spring Boot 3.2 Migraion -->
 		<!-- <java.version>17</java.version> -->
 	</properties>
 
