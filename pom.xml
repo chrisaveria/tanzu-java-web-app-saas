@@ -7,7 +7,8 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<!-- CAA - Spring Boot 3.2 Migraion -->
 		<version>2.7.5</version>   
-		<!-- <version>3.2.2</version> -->
+		<!-- <version>3.3.2</version> -->
+		<!-- <version>3.0.15</version> -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -18,7 +19,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<snakeyaml.version>1.32</snakeyaml.version>	
+		<!-- <snakeyaml.version>1.32</snakeyaml.version>	 -->
 		<!-- CAA - Spring Boot 3.2 Migraion -->
 		<!-- <java.version>17</java.version> -->
 	</properties>
@@ -31,7 +32,7 @@
 	</licenses>
 
 	<!-- CAA TP-K8s App Mgmt -->
-	<dependencyManagement>
+	<!-- <dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.wavefront</groupId>
@@ -41,7 +42,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement> -->
 
 	<dependencies>
 		<dependency>
@@ -68,7 +69,7 @@
 		</dependency>
 
 		<!-- CAA TP-K8s App Mgmt -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.wavefront</groupId>
 			<artifactId>wavefront-spring-boot-starter</artifactId>
 		</dependency>
@@ -76,10 +77,10 @@
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-wavefront</artifactId>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency> -->
 
 		<!-- CAA TP-K8s App Mgmt -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-brave</artifactId>
 			<version>1.3.2</version>
@@ -89,7 +90,7 @@
 			<artifactId>micrometer-tracing-reporter-wavefront</artifactId>
 			<scope>runtime</scope>
 			<version>1.3.2</version>
-		</dependency>
+		</dependency> -->
 
 	</dependencies>
 
@@ -121,4 +122,19 @@
 		</plugins>
 	</build>
 
+	<!-- <repositories>
+		<repository>
+			<id>spring-enterprise-subscription</id>
+			<url>http://jfrog.tanzu-play-caa.com:80/artifactory/libs-release/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-enterprise-subscription</id>
+			<url>http://jfrog.tanzu-play-caa.com:80/artifactory/libs-release/</url>
+		</pluginRepository>
+	</pluginRepositories> -->
 </project>
+
+
+

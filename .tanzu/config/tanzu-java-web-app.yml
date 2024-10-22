@@ -13,9 +13,9 @@ spec:
     path: ../..
   nonSecretEnv:
   - name: key1
-    value: test
-  - name: KEY
-    value: VALUE
+    value: val1
+  - name: key2
+    value: val2   
   ports:
   - name: main
     port: 8080
