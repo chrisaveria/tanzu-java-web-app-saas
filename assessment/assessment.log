@@ -1,6 +1,0 @@
-2024-07-25 11:22:42: *****************************************************************************
-2024-07-25 11:22:42: *                     Started SBOM Collection                               *
-2024-07-25 11:22:42: *****************************************************************************
-2024-07-25 11:22:43: Executing command: cd /Users/averiac/Workspace-Lab/tanzu/tap-saas/tanzu-java-web-app
-2024-07-25 11:22:44: Executing command: mvn -q org.cyclonedx:cyclonedx-maven-plugin:2.7.11:makeAggregateBom -DoutputDirectory=/Users/averiac/Workspace-Lab/tanzu/tap-saas/tanzu-java-web-app/assessment/sbom -DoutputName=${project.artifactId} -DschemaVersion=1.4 -Dcyclonedx.skipAttach=true -Dcyclonedx.skipNotDeployed=false -DoutputFormat=json
-2024-07-25 11:22:56: Executing command: rm -rf /Users/averiac/Workspace-Lab/tanzu/tap-saas/tanzu-java-web-app/assessment/sbom
